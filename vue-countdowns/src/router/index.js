@@ -12,7 +12,7 @@ export default new Router({
       name: 'UserList',
       component: UserList
     },
-	{
+    {
       path: '/countdowns',
       name: 'CountdownPage',
       component: CountdownPage

@@ -17,7 +17,7 @@
   </ul>
 </div>
 </template>
- 
+
 <script>
 import Countdown from '@/components/Countdown'
 
@@ -50,7 +50,7 @@ export default {
     stopButtonPressed (index) {
       this.countdowns.splice(index, 1)
     },
-	updateCountdowns () {
+    updateCountdowns () {
       this.countdowns.forEach(countdown => {
         if (countdown.remaining > 0) {
           countdown.remaining -= 1
@@ -60,6 +60,6 @@ export default {
   }
 }
 </script>
- 
+
 <style scoped>
 </style>
