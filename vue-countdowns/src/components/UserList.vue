@@ -30,10 +30,12 @@ export default {
   },
   methods: {
     addUser () {
+
       this.users.push({
         id: this.newUserEmail,
         countdowns: []
       })
+      this.newUserEmail= ''
     }
   }
 }
