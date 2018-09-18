@@ -13,7 +13,8 @@ export default new Router({
       component: UserList
     },
     {
-      path: '/countdowns',
+      path: '/countdowns/:userId',
+      props: true,
       name: 'CountdownPage',
       component: CountdownPage
     }

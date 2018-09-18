@@ -1,11 +1,11 @@
 
 <template>
   <div class="user-list">
-    <h1>Countdown Users</h1>
-    <ul>
-      <li v-for="user in users">
-        {{ user.id }}
-      </li>
+  <h1>Countdown Users</h1>
+<ul>
+<li v-for="user in users">
+  <router-link :to="{ name: 'CountdownPage', params: { userId: user.id } }">{{ user.id }}</router-link>
+</li>
       <li>
         <form v-on:submit.prevent="addUser">
           <input type="text"
@@ -34,7 +34,11 @@ export default {
         id: this.newUserEmail,
         countdowns: []
       })
-      this.newUserEmail = ' '
+
+      this.$router.push({
+        name: 'CountdownPage',
+        params: { userId: this.newUserEmail }
+      })
     }
   }
 }

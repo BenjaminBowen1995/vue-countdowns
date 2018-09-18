@@ -1,6 +1,6 @@
 <template>
 <div class="countdown-page">
-  <h1>Hello, {{ username }}</h1>
+  <h1>Hello, {{ userId }}</h1>
   <form v-on:submit.prevent="startButtonPressed">
     <label>Countdown to</label>
     <input v-model="form.description" type=text name=description placeholder="Something">
@@ -23,15 +23,16 @@ import Countdown from '@/components/Countdown'
 
 export default {
   name: 'countdown-page',
+  props: ['userId'],
   components: { Countdown },
   data () {
     return {
-      username: 'Unknown',
       form: {
         description: '',
         countdown: 10
       },
-      countdowns: []
+      countdowns: [],
+      timer: null
     }
   },
   created () {
