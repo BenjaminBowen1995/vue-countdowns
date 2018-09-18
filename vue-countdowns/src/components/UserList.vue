@@ -1,0 +1,43 @@
+
+<template>
+  <div class="user-list">
+    <h1>Countdown Users</h1>
+    <ul>
+      <li v-for="user in users">
+        {{ user.id }}
+      </li>
+      <li>
+        <form v-on:submit.prevent="addUser">
+          <input type="text"
+                 placeholder="New user email"
+                 v-model="newUserEmail">
+        </form>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'user-list',
+  data () {
+    return {
+      users: [
+        { id: 'countdown-user@bjss.com', countdowns: [] },
+        { id: 'someone-else@bjss.com', countdowns: [] }
+      ]
+    }
+  },
+  methods: {
+    addUser () {
+      this.users.push({
+        id: this.newUserEmail,
+        countdowns: []
+      })
+    }
+  }
+}
+</script>
+
+<style scoped>
+</style>
