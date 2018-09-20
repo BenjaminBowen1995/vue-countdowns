@@ -1,0 +1,136 @@
+[Thu, 20 Sep 2018 14:39:14 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Thu, 20 Sep 2018 14:39:14 GMT] [info] [<0.000.0>] database files will be saved to .pouch
+[Thu, 20 Sep 2018 14:39:14 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Thu, 20 Sep 2018 14:43:37 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 404
+[Thu, 20 Sep 2018 14:43:37 GMT] [info] [<0.000.0>] 127.0.0.1 - - PUT /countdowns/ 201
+[Thu, 20 Sep 2018 14:43:37 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 14:43:37 GMT] [info] [<0.000.0>] 127.0.0.1 - - POST /countdowns/_bulk_docs 201
+[Thu, 20 Sep 2018 14:48:31 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 14:48:31 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:06:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils 301
+[Thu, 20 Sep 2018 15:06:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 200
+[Thu, 20 Sep 2018 15:06:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 200
+[Thu, 20 Sep 2018 15:06:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 200
+[Thu, 20 Sep 2018 15:06:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 200
+[Thu, 20 Sep 2018 15:06:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1537455992478 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1537455992477 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils 301
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1537456059467 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1537456059468 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1537456059469 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1537456059470 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns?_=1537456059471 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 200
+[Thu, 20 Sep 2018 15:07:39 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 200
+[Thu, 20 Sep 2018 15:08:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 200
+[Thu, 20 Sep 2018 15:08:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users/_all_docs?limit=21&include_docs=true 200
+[Thu, 20 Sep 2018 15:08:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1537456059472 200
+[Thu, 20 Sep 2018 15:08:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1537456059473 200
+[Thu, 20 Sep 2018 15:08:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1537456059475 200
+[Thu, 20 Sep 2018 15:08:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1537456059474 200
+[Thu, 20 Sep 2018 15:08:10 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns?_=1537456059476 200
+[Thu, 20 Sep 2018 15:08:31 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 200
+[Thu, 20 Sep 2018 15:08:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?limit=21 200
+[Thu, 20 Sep 2018 15:08:32 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1537456059477 200
+[Thu, 20 Sep 2018 15:08:34 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1537456059478 200
+[Thu, 20 Sep 2018 15:08:34 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1537456059479 200
+[Thu, 20 Sep 2018 15:08:34 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1537456059480 200
+[Thu, 20 Sep 2018 15:08:34 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns?_=1537456059481 200
+[Thu, 20 Sep 2018 15:18:38 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Thu, 20 Sep 2018 15:18:38 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?limit=21 304
+[Thu, 20 Sep 2018 15:18:38 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1537456059482 200
+[Thu, 20 Sep 2018 15:18:45 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/countdown-user@bjss.com?conflicts=true 200
+[Thu, 20 Sep 2018 15:18:45 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_uuids?count=1 200
+[Thu, 20 Sep 2018 15:18:48 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Thu, 20 Sep 2018 15:18:48 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?limit=21 304
+[Thu, 20 Sep 2018 15:18:48 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1537456059483 200
+[Thu, 20 Sep 2018 15:19:34 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Thu, 20 Sep 2018 15:19:34 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Thu, 20 Sep 2018 15:19:34 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Thu, 20 Sep 2018 15:19:35 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 20 Sep 2018 15:19:35 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 20 Sep 2018 15:19:35 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Thu, 20 Sep 2018 15:19:35 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Thu, 20 Sep 2018 15:19:35 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Thu, 20 Sep 2018 15:19:35 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Thu, 20 Sep 2018 15:19:35 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?limit=21 304
+[Thu, 20 Sep 2018 15:19:35 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Thu, 20 Sep 2018 15:19:35 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1537456775008 200
+[Thu, 20 Sep 2018 15:19:35 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 200
+[Thu, 20 Sep 2018 15:19:42 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/unknown.user? 404
+[Thu, 20 Sep 2018 15:19:43 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/unknown.user? 404
+[Thu, 20 Sep 2018 15:24:56 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:24:56 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:26:11 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Thu, 20 Sep 2018 15:26:11 GMT] [info] [<0.000.0>] database files will be saved to .pouch
+[Thu, 20 Sep 2018 15:26:11 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Thu, 20 Sep 2018 15:26:40 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:26:40 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:35:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:35:02 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:36:01 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:36:01 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:36:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:36:04 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:36:31 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:36:31 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:38:13 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Thu, 20 Sep 2018 15:38:13 GMT] [info] [<0.000.0>] database files will be saved to .pouch
+[Thu, 20 Sep 2018 15:38:13 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Thu, 20 Sep 2018 15:38:25 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:38:25 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:41:25 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:41:25 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:41:48 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:41:48 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:47:36 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Thu, 20 Sep 2018 15:47:36 GMT] [info] [<0.000.0>] database files will be saved to .pouch
+[Thu, 20 Sep 2018 15:47:36 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Thu, 20 Sep 2018 15:47:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:47:49 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 15:48:13 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Thu, 20 Sep 2018 15:48:13 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Thu, 20 Sep 2018 15:48:13 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Thu, 20 Sep 2018 15:48:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 20 Sep 2018 15:48:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 20 Sep 2018 15:48:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Thu, 20 Sep 2018 15:48:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Thu, 20 Sep 2018 15:48:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Thu, 20 Sep 2018 15:48:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Thu, 20 Sep 2018 15:48:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?limit=21 304
+[Thu, 20 Sep 2018 15:48:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Thu, 20 Sep 2018 15:48:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1537458493968 200
+[Thu, 20 Sep 2018 15:48:14 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 200
+[Thu, 20 Sep 2018 15:48:24 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/unknown.user? 404
+[Thu, 20 Sep 2018 15:48:25 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/unknown.user? 404
+[Thu, 20 Sep 2018 16:05:59 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 16:05:59 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/ 200
+[Thu, 20 Sep 2018 16:23:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 304
+[Thu, 20 Sep 2018 16:23:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 304
+[Thu, 20 Sep 2018 16:23:05 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 304
+[Thu, 20 Sep 2018 16:23:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 20 Sep 2018 16:23:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Thu, 20 Sep 2018 16:23:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Thu, 20 Sep 2018 16:23:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 304
+[Thu, 20 Sep 2018 16:23:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 304
+[Thu, 20 Sep 2018 16:23:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 304
+[Thu, 20 Sep 2018 16:23:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?limit=21 304
+[Thu, 20 Sep 2018 16:23:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 304
+[Thu, 20 Sep 2018 16:23:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /countdowns/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1537460586052 200
+[Thu, 20 Sep 2018 16:23:06 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 200
