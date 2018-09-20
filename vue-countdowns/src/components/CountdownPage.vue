@@ -31,11 +31,16 @@ export default {
         description: '',
         countdown: 10
       },
-      countdowns: [],
       timer: null
     }
   },
+  computed: {
+    countdowns () {
+      return this.$store.getters.countdowns
+    }
+  },
   created () {
+    this.$store.dispatch('loadCountdownsForUser', this.userId)
     this.timer = setInterval(() => this.updateCountdowns(), 1000)
   },
   beforeDestroy () {
@@ -43,20 +48,16 @@ export default {
   },
   methods: {
     startButtonPressed () {
-      this.countdowns.push({
+      this.$store.dispatch('addCountdown', {
         description: this.form.description || 'Something',
         remaining: +this.form.countdown || 10
       })
     },
     stopButtonPressed (index) {
-      this.countdowns.splice(index, 1)
+      this.$store.dispatch('removeCountdownAtIndex', index)
     },
     updateCountdowns () {
-      this.countdowns.forEach(countdown => {
-        if (countdown.remaining > 0) {
-          countdown.remaining -= 1
-        }
-      })
+      this.$store.dispatch('updateCountdowns')
     }
   }
 }

@@ -22,19 +22,19 @@ export default {
   name: 'user-list',
   data () {
     return {
-      users: [
-        { id: 'countdown-user@bjss.com', countdowns: [] },
-        { id: 'someone-else@bjss.com', countdowns: [] }
-      ]
+      newUserEmail: ''
+    }
+  },
+  created () {
+    this.$store.dispatch('loadUsers')
+  },
+  computed: {
+    users () {
+      return this.$store.state.users
     }
   },
   methods: {
     addUser () {
-      this.users.push({
-        id: this.newUserEmail,
-        countdowns: []
-      })
-
       this.$router.push({
         name: 'CountdownPage',
         params: { userId: this.newUserEmail }
