@@ -1,12 +1,9 @@
+import 'whatwg-fetch'
+
 import Vue from 'vue'
 import Vuex from 'vuex'
 
 Vue.use(Vuex)
-
-const DUMMY_USERS = [
-  { id: 'countdown-user@bjss.com', countdowns: [] },
-  { id: 'someone-else@bjss.com', countdowns: [] }
-]
 
 export default new Vuex.Store({
   state: {
@@ -43,38 +40,46 @@ export default new Vuex.Store({
   actions: {
     // actions receive a context object but we only need the commit function property
     loadUsers ({commit}) {
-      commit('setUsers', DUMMY_USERS)
+      return fetch('/api/users')
+              .then(response => response.json())
+              .then(body => {
+                const users = body.users.map(id => ({id}))
+                commit('setUsers', users)
+              })
     },
     loadCountdownsForUser ({commit}, userId) {
-      const userData = DUMMY_USERS.find(user => user.id === userId) || {}
-      commit('setCountdowns', userData.countdowns || [])
-      commit('setCurrentUserId', userId)
+      return fetch(`/api/countdowns/${userId}`)
+              .then(response => response.json())
+              .then(body => {
+                const countdowns = body.countdowns.map(countdown => {
+                  return {description: countdown.description, endDateTime: new Date(countdown.endDateTime)}
+                })
+                commit('setCountdowns', countdowns)
+                commit('setCurrentUserId', userId)
+              })
+    },
+    saveCountdownsForCurrentUser ({commit, state}) {
+      const options = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({countdowns: state.countdownStorage})
+      }
+      return fetch(`/api/countdowns/${state.currentUserId}`, options)
     },
     addCountdown ({commit, state, dispatch}, {description, remaining}) {
-      // amend the DUMMY_USERS array with the new countdown (and possibly new user) then reload
-      const newCountdown = {
+      const countdowns = state.countdownStorage
+      countdowns.push({
         description,
         endDateTime: Date.now() + remaining * 1000
-      }
-      const userData = DUMMY_USERS.find(user => user.id === state.currentUserId)
-
-      if (userData) {
-        userData.countdowns.push(newCountdown)
-      } else {
-        DUMMY_USERS.push({
-          id: state.currentUserId,
-          countdowns: [newCountdown]
-        })
-      }
-      dispatch('loadCountdownsForUser', state.currentUserId)
+      })
+      commit('setCountdowns', countdowns)
+      dispatch('saveCountdownsForCurrentUser')
     },
     removeCountdownAtIndex ({commit, state, dispatch}, index) {
-      // again, amend the DUMMY_USERS array then reload
-      const userData = DUMMY_USERS.find(user => user.id === state.currentUserId) || {}
-      if (userData) {
-        userData.countdowns.splice(index, 1)
-        dispatch('loadCountdownsForUser', state.currentUserId)
-      }
+      const countdowns = state.countdownStorage
+      countdowns.splice(index, 1)
+      commit('setCountdowns', countdowns)
+      dispatch('saveCountdownsForCurrentUser')
     },
     updateCountdowns ({commit}) {
       commit('setCurrentDateTime', Date.now())
